@@ -1,4 +1,4 @@
-# Flask Interactive Website Template - minisdc
+# Interactive Website Template - minisdc
 
 Welcome to minisdc, a Flask project template designed to help you create interactive websites with ease.
 
