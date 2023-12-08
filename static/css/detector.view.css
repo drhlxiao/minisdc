@@ -1,0 +1,6 @@
+.pixel:hover{
+	strike-width:5 !important;
+	strike: green !important;
+	opacity: 0.4 !important;
+}
+.pixel { transition: all .2s ease-in-out; }

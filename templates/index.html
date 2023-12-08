@@ -1,0 +1,52 @@
+{% extends "base-fluid.html" %}
+{% block title %}STIX {% endblock %}
+
+{% block head %}
+{% assets "example_css" %}
+<link rel="stylesheet" href="{{ ASSET_URL }}" />
+{% endassets %}
+{% assets "example_js" %}
+<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+{% endblock %}
+
+{% block  container %} 
+
+<!-- content goes into main container -->
+<!--  add your html code here -->
+<!-- bootstrap 4 is supported -->
+<h2>Query STIX solar flare list</h2>
+<form class="form-inline mt-2">
+  <div class="form-group mb-2">
+    <label for="start" >Time range: </label>
+    <input type="text" placeholder="Start Time" class="form-control datetime-picker" id="start" >
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="text" placeholder="End time" class="form-control datetime-picker" id="end" >
+  </div>
+  <button type="submit" id="query-btn" class="btn btn-primary mb-2">Query</button>
+</form>
+<div class="p-2 ml-5 mt-2">
+	<h3> STIX flare list (dummy)</h3>
+	<table class="table table-hover table-striped table-bordered  table-sm table-responsive-sm  col-6" 
+		   id="flare-list" style="display:none;">
+		   <thead>
+			   <tr >
+				   <th >Entry ID</th>
+				   <th >Flare ID</th>
+				   <th  title="Start UTC">Start UTC</th>
+				   <th  title="End UTC">End UTC</th>
+				   <th >Data Link</th>
+			   </tr>
+		   </thead>
+		   <tbody >
+		   </tbody>
+	</table>
+
+</div>
+
+
+
+
+{% endblock %}
+

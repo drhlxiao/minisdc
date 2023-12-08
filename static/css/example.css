@@ -1,0 +1,19 @@
+.toolbar{
+	 font-size: .75em;
+}
+#statusbar{
+	position:fixed;
+	left: 0%;
+	bottom: 0%;
+	width: 200px;
+	border-radius: 0px;
+	opacity: 0.2;
+	font-family: Arial;
+	font-size: 14px;
+}
+.wrapper {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
