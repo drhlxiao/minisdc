@@ -10,7 +10,10 @@ pip install -r requirements.txt
 ```
 
 ### Run
+Download the source code.
+
 ```bash
+cd minisdc/
 python wsgi.py
 ```
 
